@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <!-- styles for video player -->
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/skeleton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div class="hero-wrap">
+        <div class="logo"> <img src="images/d-logo.svg"> </div>
+        <div class="video-overlay"></div>
+        <div class="hero-copy animated fadeIn">
+            <span class="label">EXPLORE</span>
+            <h1>Venice</h1>
+            <div class="rotate">
+                <div class="rotate-icon">
+                </div>
+                <span class="rotate-pls">rotate 360 video</span>
+            </div>
+        </div>
+        <div id="background-video" class="background-video">
+        </div>
+    </div>
+    </div><!-- end hero wrap -->
+
+    <section class="content">
+      <div class="container">
+        <p class="intro-p center">Bacon ipsum dolor amet tail landjaeger pork chop flank turkey, shoulder biltong. Pig ham hock beef sirloin ground round porchetta ham ribeye. Alcatra chuck pancetta kevin ground round landjaeger flank prosciutto ribeye ham hock pork loin strip steak turducken. Leberkas ground round doner salami kevin drumstick.</p>
+        <div class="row">
+          
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- ADD Jquery Video Background -->
+    <script src="src/jquery.youtubebackground.js"></script>
+    <script>
+    jQuery(function($) {
+
+
+        $('#background-video').YTPlayer({
+            fitToBackground: true,
+            videoId: 'TVQvdDiugLY',
+            pauseOnScroll: true,
+            callback: function() {
+                videoCallbackEvents();
+            }
+        });
+
+        var videoCallbackEvents = function() {
+            var player = $('#background-video').data('ytPlayer').player;
+
+            player.addEventListener('onStateChange', function(event) {
+                console.log("Player State Change", event);
+
+                // OnStateChange Data
+                if (event.data === 0) {
+                    console.log('video ended');
+                } else if (event.data === 2) {
+                    console.log('paused');
+                }
+            });
+        }
+    });
+    </script>
+
+   
+</body>
+
+</html>

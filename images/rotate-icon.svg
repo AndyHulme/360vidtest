@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>rotate-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tailor-Made-Itinerary" transform="translate(-209.000000, -1397.000000)" fill="#FFFFFF">
+            <g id="Tabs---Features-Hotel-Copy" transform="translate(-7.000000, 963.000000)">
+                <g id="Group-2" transform="translate(216.000000, 0.000000)">
+                    <g id="rotate" transform="translate(0.000000, 434.000000)">
+                        <g id="Capa_1">
+                            <g id="Group">
+                                <path d="M16.5179064,1 C20.3909064,1 24.0319064,2.5085 26.7704064,5.247 C31.8394064,10.3155 32.4254064,18.445 28.1404064,24.1715 L26.0179064,26.2945 L26.0179064,22 L25.0179064,22 L25.0179064,27.5 L25.5179064,28 L31.0179064,28 L31.0179064,27 L26.7269064,27 L28.8729064,24.8535 L28.9189064,24.8005 C33.5244064,18.677 32.9049064,9.967 27.4774064,4.54 C24.5499064,1.6125 20.6579064,0 16.5179064,0 L16.5179064,1 Z M3.89540641,7.8285 L6.01790641,5.7055 L6.01790641,10 L7.01790641,10 L7.01790641,4.5 L6.51790641,4 L1.01790641,4 L1.01790641,5 L5.30890641,5 L3.16290641,7.1465 L3.11690641,7.1995 C-1.48859359,13.323 -0.868593591,22.033 4.55840641,27.46 C7.48590641,30.3875 11.3779064,32 15.5179064,32 L15.5179064,31 C11.6449064,31 8.00390641,29.4915 5.26540641,26.753 C0.196406409,21.6845 -0.389093591,13.555 3.89540641,7.8285 Z" id="rotate-icon"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
